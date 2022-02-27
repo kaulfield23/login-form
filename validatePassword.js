@@ -13,6 +13,7 @@ password.addEventListener('keyup', () => {
         warning.innerText = "❌"
     }
 })
+
 confirmPassword.addEventListener('keyup', () => {
     const isNotMatchingForRegEx = password.validity.patternMismatch;
 
