@@ -27,7 +27,7 @@
         </div>
     </nav>
     <div class="d-flex justify-content-center">
-        <form class="signup-form w-50 p-3" action="login.html">
+        <form class="signup-form form-style w-50 p-3" action="">
             <h1 class="mb-4">Sign up</h1>
             <div class="form-group my-3">
                 <label for="emailInput">Email address</label>
@@ -39,11 +39,16 @@
             </div>
             <div class="form-group my-3">
                 <label for="passwordInput">Password</label>
-                <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers and special character" type="password" class="form-control" id="passwordInput" placeholder="Password" required name="passwordInput" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$"
-                />
+                <div class="field-icon">
+                    <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers and special character" type="password" class="form-control" id="passwordInput" placeholder="Password" required name="passwordInput" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$"
+                    />
+                    <span class="warning warning-icon" class="my-2"></span>
+                </div>
                 <label for="confirmPassword">Confirm password</label>
-                <input title="Please enter the same Password as above" type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$" />
-                <p id="warning" class="my-2"></p>
+                <div class="field-icon">
+                    <input title="Please enter the same Password as above" type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$" />
+                    <span class="warning2 warning-icon" class="my-2"></span>
+                </div>
                 <br />
                 <button type=" submit " class="btn btn-primary ">Submit</button>
         </form>

@@ -7,16 +7,19 @@ body {
     background-color: rgb(255, 235, 210);
 }
 
-.jumbotron {
+.form-style {
     background-color: white;
     margin: 50px;
     padding: 50px;
     border: 2px black solid;
 }
 
-.signup-form {
-    background-color: white;
-    padding: 50px;
-    border: 2px black solid;
-    margin: 50px;
+.field-icon {
+    position: relative;
+}
+
+.field-icon .warning-icon {
+    position: absolute;
+    top: 5px;
+    right: 4px;
 }
